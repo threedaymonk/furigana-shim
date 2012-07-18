@@ -6,7 +6,7 @@
     var styleElement = d.createElement('style');
     styleElement.setAttribute('type', 'text/css');
     styleElement.appendChild(d.createTextNode(css));
-    head.appendChild(styleElement);
+    head.insertBefore(styleElement, head.childNodes[0]);
   };
 
   var shim = function(){
