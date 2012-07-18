@@ -9,7 +9,7 @@ other browsers that don’t natively support it.
 Use
 ---
 
-Mark up your ruby as described in the
+Mark up your furigana as described in the
 [2001 W3C ruby recommendation](http://www.w3.org/TR/ruby/). The important point
 to note is that you must use both `<rb>` and `<rt>` (`<rp>` is optional) and
 put only one set inside each `<ruby>` block:
@@ -26,3 +26,10 @@ and add it to the `<head>` of the document:
 ```
 
 That’s it!
+
+Feedback
+--------
+
+This has not been extensively tested, so feedback is very welcome, either in
+the form of [issues](https://github.com/threedaymonk/furigana-shim/issues) or
+via [email to the author](mailto:pbattley@gmail.com).
