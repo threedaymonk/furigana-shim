@@ -11,7 +11,7 @@ rb, rt {
 }
 rt {
   font-size: 60%;
-  line-height: normal;
+  line-height: 1.1;
   display: table-header-group;
 }
 rb {
