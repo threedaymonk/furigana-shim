@@ -18,11 +18,11 @@ put only one set inside each `<ruby>` block:
 <ruby><rb>漢字</rb><rp>（</rp><rt>かんじ</rt><rp>）</rp></ruby>
 ```
 
-[Download the shim](https://github.com/threedaymonk/furigana-shim/downloads)
+Download the [compiled and minified shim](https://github.com/threedaymonk/furigana-shim/blob/master/furigana.min.js)
 and add it to the `<head>` of the document:
 
 ```html
-<script src="furigana-0.0.1.min.js"></script>
+<script src="furigana.min.js"></script>
 ```
 
 That’s it!
