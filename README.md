@@ -9,7 +9,7 @@ text in the form of the `<ruby>` element. Firefox doesn’t.
 If you’re a _user_ of Firefox, you can fix this omission via an add-on:
 
 * [HTML Ruby](https://addons.mozilla.org/en-US/firefox/addon/html-ruby/)
-* [XHTML Ruby Suppprt](https://addons.mozilla.org/en-US/firefox/addon/xhtml-ruby-support/)
+* [XHTML Ruby Support](https://addons.mozilla.org/en-US/firefox/addon/xhtml-ruby-support/)
 
 If you're a publisher, though, that doesn’t help.
 
