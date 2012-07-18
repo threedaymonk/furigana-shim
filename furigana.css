@@ -1,0 +1,22 @@
+ruby {
+  display: inline-table;
+  text-align: center;
+  border-collapse: collapse;
+  vertical-align: bottom;
+}
+rb, rt {
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+}
+rt {
+  font-size: 60%;
+  line-height: normal;
+  display: table-header-group;
+}
+rb {
+  display: table-row;
+}
+rp {
+  display: none;
+}
