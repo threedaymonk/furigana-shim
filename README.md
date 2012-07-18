@@ -1,6 +1,8 @@
 furigana-shim
 =============
 
+Firefoxはルビ（振り仮名など）を表示することができない。短いスクリプトでできるようにする。
+
 Internet Explorer and Chrome support the display of _furigana_ glosses above
 text in the form of the `<ruby>` element. Firefox doesn’t.
 
