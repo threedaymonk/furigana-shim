@@ -2,9 +2,18 @@ furigana-shim
 =============
 
 Internet Explorer and Chrome support the display of _furigana_ glosses above
-text in the form of the `<ruby>` element. Firefox doesn’t. This small shim
-adds appropriate CSS to make `<ruby>` work properly in Firefox and (possibly)
-other browsers that don’t natively support it.
+text in the form of the `<ruby>` element. Firefox doesn’t.
+
+If you’re a _user_ of Firefox, you can fix this omission via an add-on:
+
+* [HTML Ruby](https://addons.mozilla.org/en-US/firefox/addon/html-ruby/)
+* [XHTML Ruby Suppprt](https://addons.mozilla.org/en-US/firefox/addon/xhtml-ruby-support/)
+
+If you're a publisher, though, that doesn’t help.
+
+This small shim fixes things from the web developer side by adding appropriate
+CSS to make `<ruby>` work properly in Firefox and (possibly) other browsers
+that don’t natively support it.
 
 Use
 ---
@@ -26,6 +35,12 @@ and add it to the `<head>` of the document:
 ```
 
 That’s it!
+
+Limitations
+-----------
+
+Complex ruby – where there are glosses both above and below the text – is not
+supported.
 
 Feedback
 --------
