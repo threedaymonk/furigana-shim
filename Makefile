@@ -1,9 +1,9 @@
 .PHONY: clean
 
-furigana.min.js: furigana.js furigana.min.css
+furigana.min.js: furigana.max.js furigana.min.css
 	ruby -p -e '$$_.sub! "/* CSS */", File.read("furigana.min.css")' < $< | uglifyjs > $@
 
-%.min.css: %.css
+%.min.css: %.max.css
 	csstidy $< --template=highest $@
 
 clean:
