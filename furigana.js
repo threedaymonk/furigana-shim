@@ -23,6 +23,8 @@
     if (w.getComputedStyle(rt)['display'] === 'block') return;
 
     addCSS(css);
+
+    d.body.removeChild(ruby);
   };
 
   var onload = function(f){
