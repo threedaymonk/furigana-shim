@@ -1,10 +1,10 @@
 furigana-shim
 =============
 
-Firefoxはルビ（振り仮名など）を表示することができない。短いスクリプトでできるようにする。
+FirefoxやOperaはルビ（振り仮名など）を表示することができない。短いスクリプトでできるようにする。
 
 Internet Explorer and Chrome support the display of _furigana_ glosses above
-text in the form of the `<ruby>` element. Firefox doesn’t.
+text in the form of the `<ruby>` element. Firefox and Opera don't.
 
 If you’re a _user_ of Firefox, you can fix this omission via an add-on:
 
@@ -14,8 +14,8 @@ If you’re a _user_ of Firefox, you can fix this omission via an add-on:
 If you're a publisher, though, that doesn’t help.
 
 This small shim fixes things from the web developer side by adding appropriate
-CSS to make `<ruby>` work properly in Firefox and (possibly) other browsers
-that don’t natively support it.
+CSS to make `<ruby>` work properly in Firefox, Opera, and (possibly) other
+browsers that don’t natively support it.
 
 Use
 ---
@@ -43,6 +43,10 @@ Limitations
 
 Complex ruby – where there are glosses both above and below the text – is not
 supported.
+
+In Opera, as `vertical-align: bottom` doesn't work quite as expected, the
+alignment of elements is achieved using an `em` value. This means that
+alignment is sightly less reliable in Opera.
 
 Feedback
 --------

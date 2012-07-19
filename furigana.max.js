@@ -1,4 +1,4 @@
-(function(w, d){
+(function(n, w, d){
   var css = '/* CSS */';
 
   var addCSS = function(css){
@@ -22,6 +22,11 @@
     // ruby.
     if (w.getComputedStyle(rt)['display'] === 'block') return;
 
+    // No one uses Opera, but let's give it some perfunctory support.
+    if (n.userAgent.match(/^Opera/)) {
+      d.body.classList.add('furigana-opera-patch');
+    }
+
     addCSS(css);
 
     d.body.removeChild(ruby);
@@ -37,4 +42,4 @@
   };
 
   onload(shim);
-})(window, document);
+})(navigator, window, document);

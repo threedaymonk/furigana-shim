@@ -4,6 +4,15 @@ ruby {
   border-collapse: collapse;
   vertical-align: bottom;
 }
+body.furigana-opera-patch ruby {
+  /*
+  Sigh. In Opera, bottom works the same as top. Using a value is much less
+  satisfactory than vertical-align: bottom, as it depends on the size of rt
+  relative to ruby, and thus doesn't scale exactly when the size of rt is
+  changed. This is why we apply this patch only to Opera.
+  */
+  vertical-align: 1.1em;
+}
 rb, rt {
   padding: 0;
   margin: 0;
