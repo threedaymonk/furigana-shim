@@ -29,11 +29,11 @@ put only one set inside each `<ruby>` block:
 <ruby><rb>漢字</rb><rp>（</rp><rt>かんじ</rt><rp>）</rp></ruby>
 ```
 
-Download the [compiled and minified shim](https://github.com/threedaymonk/furigana-shim/blob/master/furigana.min.js)
+Download the [compiled and minified shim](https://github.com/threedaymonk/furigana-shim/blob/master/furigana.js)
 and add it to the `<head>` of the document:
 
 ```html
-<script src="furigana.min.js"></script>
+<script src="furigana.js"></script>
 ```
 
 That’s it!
