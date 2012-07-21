@@ -22,7 +22,7 @@
     // ruby.
     if (w.getComputedStyle(rt)['display'] === 'block') return;
 
-    // No one uses Opera, but let's give it some perfunctory support.
+    // Opera needs a slightly different implementation.
     if (n.userAgent.match(/^Opera/)) {
       d.body.classList.add('furigana-opera-patch');
     }
