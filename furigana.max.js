@@ -15,19 +15,19 @@
     d.body.appendChild(ruby);
     ruby.appendChild(rt);
 
-    // Old IE doesn't support this, but it does ruby already.
-    if (typeof w.getComputedStyle !== 'function') return;
+    // * Old IE doesn't support this, but it does ruby already.
+    // * So far, it seems that webkit styles <rt> as a block if it
+    //   supports ruby.
+    if ((typeof w.getComputedStyle === 'function') &&
+        (w.getComputedStyle(rt)['display'] !== 'block')) {
 
-    // So far, it seems that webkit styles <rt> as a block if it supports
-    // ruby.
-    if (w.getComputedStyle(rt)['display'] === 'block') return;
+      // Opera needs a slightly different implementation.
+      if (n.userAgent.match(/^Opera/)) {
+        d.body.classList.add('furigana-opera-patch');
+      }
 
-    // Opera needs a slightly different implementation.
-    if (n.userAgent.match(/^Opera/)) {
-      d.body.classList.add('furigana-opera-patch');
+      addCSS(css);
     }
-
-    addCSS(css);
 
     d.body.removeChild(ruby);
   };
